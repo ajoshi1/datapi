@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+  get '/data_models' => 'data_models#index'
+  # get '/data_models/new' => 'data_models#new'
+  
+  # post '/data_models' => 'data_models#create'
+  # delete '/data_models/:id' => 'data_models#destroy'
+
+  # get '/data_models/:id' => 'data_models#show'
+  # put '/data_models/:id' => 'data_models#update'
+  # get '/data_models/:id/edit' => 'data_models#edit'
+  # resources :data_models
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
