@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # post '/data_models' => 'data_models#create'
   # delete '/data_models/:id' => 'data_models#destroy'
 
-  # get '/data_models/:id' => 'data_models#show'
+  get '/data_models/:id' => 'data_models#show'
   # put '/data_models/:id' => 'data_models#update'
   # get '/data_models/:id/edit' => 'data_models#edit'
   # resources :data_models

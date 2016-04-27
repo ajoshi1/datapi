@@ -6,7 +6,7 @@
 	</thead>
 	<% @data_models.each do |data_model| %>
 	<tr>
-		<td><%= data_model.name %></td>
+		<td><a href="/data_models/<%= data_model.id %>"><%= data_model.name %></a></td>
 		<td><%= data_model.created_at.to_s(:short) %></td>
 		<td><%= data_model.updated_at.to_s(:short) %></td>
 	</tr>

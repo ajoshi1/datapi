@@ -13,4 +13,17 @@ describe DataModelsController do
       expect(assigns[:data_models]).to(eq(models))
     end
   end
+
+  describe "show" do
+    let(:model) { double(:data_model) }
+
+    before do
+      allow(DataModel).to(receive(:find).with('1')).and_return(model)
+    end
+
+    it 'assigns the model to the view' do
+      get :show, id: 1
+      expect(assigns[:data_model]).to(eq(model))
+    end
+  end
 end
