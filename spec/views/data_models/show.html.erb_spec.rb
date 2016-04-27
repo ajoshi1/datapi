@@ -8,20 +8,11 @@ describe 'data_models/show.html.erb' do
     render
   end
 
-  it 'has the name of the model' do
-    expect(rendered).to(have_tag(:li, content: data_model.name))
-  end
+  subject { rendered }
 
-  it 'has the created_at of the model' do
-    expect(rendered).to(have_tag(:li, content: data_model.created_at))
-  end
-
-  it 'has the updated_at of the model' do
-    expect(rendered).to(have_tag(:li, content: data_model.updated_at))
-  end
-
-  it 'has the description of the model' do
-    expect(rendered).to(have_tag(:li, content: data_model.description))
-  end
+  it { is_expected.to(have_tag(:li, content: data_model.name)) }
+  it { is_expected.to(have_tag(:li, content: data_model.created_at)) }
+  it { is_expected.to(have_tag(:li, content: data_model.updated_at)) }
+  it { is_expected.to(have_tag(:li, content: data_model.description)) }
 
 end
