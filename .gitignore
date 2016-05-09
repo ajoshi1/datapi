@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+# ignore the jupyter notebook checkoints
+/python_reflecton/.ipynb_checkpoints
