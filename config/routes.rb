@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
-  get '/data_models' => 'data_models#index'
+  # get '/data_models' => 'data_models#index'
   # get '/data_models/new' => 'data_models#new'
-  
+
   # post '/data_models' => 'data_models#create'
   # delete '/data_models/:id' => 'data_models#destroy'
+
+  get '/run/:name.json' => 'runner#run'
 
   get '/data_models/:id' => 'data_models#show'
   # put '/data_models/:id' => 'data_models#update'

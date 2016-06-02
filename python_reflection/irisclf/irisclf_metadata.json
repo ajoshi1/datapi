@@ -1,1 +1,1 @@
-{"target_mapping": {"0": "setosa", "1": "versicolor", "2": "virginica"}, "feature_names": ["sepal length (cm)", "sepal width (cm)", "petal length (cm)", "petal width (cm)"]}
+{"target_mapping": {"0": "setosa", "1": "versicolor", "2": "virginica"}, "feature_names": ["sepal_length", "sepal_width", "petal_length", "petal_width"]}
