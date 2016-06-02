@@ -17,7 +17,7 @@ class RunnerController < ApplicationController
       param_values << params.require(s)
     end
 
-    output = %x{cd #{dir}; /Users/pivotal/anaconda2/bin/python #{path} #{param_values.join(' ')}}.strip
+    output = %x{cd #{dir}; python #{path} #{param_values.join(' ')}}.strip #/Users/pivotal/anaconda2/bin/
 
     if meta_data["target_mapping"]
       output = meta_data["target_mapping"][output]
