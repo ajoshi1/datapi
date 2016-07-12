@@ -1,0 +1,9 @@
+applications:
+- name: datapi
+  instances: 1
+  memory: 1024M
+  disk_quota: 2048M
+  host: datapi
+  domain: cfapps.io
+  buildpack: https://github.com/ehrenmurdick/ruby-buildpack.git
+  stack: cflinuxfs2
