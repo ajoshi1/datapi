@@ -2,6 +2,9 @@
 # http://localhost:3000/run/iris.json?sepal_length=10&sepal_width=10&petal_length=10&petal_width=10
 # http://localhost:3000/run/boston.json?crim=10&zn=19&indus=100&chas=10&nox=1
 
+# http://datapi.cfapps.io/run/iris.json?sepal_length=10&sepal_width=10&petal_length=10&petal_width=10
+# http://datapi.cfapps.io/run/boston.json?crim=10&zn=19&indus=100&chas=10&nox=1
+
 class RunnerController < ApplicationController
   def run
     name = params[:name]
